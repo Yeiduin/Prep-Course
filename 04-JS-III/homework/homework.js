@@ -52,7 +52,7 @@ function dePalabrasAFrase(palabras) {return palabras.join(' ')
 }
 
 
-function arrayContiene(array, elemento) { for ( i=0; i<array.length; i++) {if (array[i]===elemento ) {return true} else return}
+function arrayContiene(array, elemento) {for ( i=0; i<array.length; i++) {if (array[i]===elemento ) {return true} } return false
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
@@ -154,15 +154,15 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  var alarr=[];
-  for (var i=0; i<11; i++){if (numero===i) {break;}
-  
-    numero=numero+2 
-    alarr.push(numero)}
-  if (i<10){return "Se interrumpió la ejecución"} else return alarr;
-   
+  var alarro=[];
+  for (var i=0; i<10; i++){ if (numero===i) {break;} numero=numero+2;
+    alarro.push(numero);}
+  if (alarro.length<10) {return "Se interrumpió la ejecución";} else {return alarro;}
 
 }
+   
+
+
 
 
 

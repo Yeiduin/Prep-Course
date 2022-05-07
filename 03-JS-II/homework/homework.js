@@ -104,7 +104,10 @@ function operadoresLogicos(num1, num2, num3) {if ((num1>num2&&num3)&&num1>0){ret
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 }
 
-function esPrimo(numero) {if (numero!=(0&&1) && numero/numero==1 && numero/1==numero) {return true}else {return false}
+function esPrimo(numero) {if (numero===0 ||numero===1) {return false;}
+  for (var i=2;i<numero;i++){if(numero%i===0){return false}} return true
+
+
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1

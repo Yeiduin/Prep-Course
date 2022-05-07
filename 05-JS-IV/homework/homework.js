@@ -1,7 +1,7 @@
 // No cambies los nombres de las funciones.
 
 function crearGato (nombre, edad) {let obje={"nombre":nombre}; obje["edad"]=edad; 
-obje.funsi=function meow(){return "Meow"}; return obje;
+obje.meow=function (){return "Meow!"}; return obje;
   // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento "nombre".
   // Agrega una propiedad al objeto con el nombre "edad" y usa el valor definido en el argumento "edad"
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
